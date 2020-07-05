@@ -1,0 +1,47 @@
+.main {
+    background: rgba(243, 243, 243, 0.7);
+    border-radius: 23px;
+    width: 915px;
+    margin: 45px auto 0 auto;
+    padding: 29px;
+    color: #8D8D8D;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__city {
+        font-size: 70px;
+        margin-bottom: 15px;
+    }
+
+    &__base {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__temperature {
+        font-size: 70px;
+    }
+
+    &__info {
+        text-align: center;
+    }
+
+    &__img {
+        width: 109px;
+        height: 109px;
+        margin-right: 20px;
+    }
+
+    &__desc {
+        display: inline-block;
+        font-size: 35px;
+    }
+
+
+
+    &__center {
+
+    }
+}
