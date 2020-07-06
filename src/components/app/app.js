@@ -9,9 +9,9 @@ const App = ({value, error}) => {
     let errorRender = null;
 
     if (error === 404) {
-        errorRender = <Error message="Такой город не существует!"/>
+        errorRender = <Error message="City not found!"/>
     } else if (error != null) {
-        errorRender = <Error message="Произошла ошибка!"/>
+        errorRender = <Error message="Oops, unexpected error!"/>
     }
 
     return (

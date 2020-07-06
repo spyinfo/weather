@@ -63,7 +63,9 @@ const Main = ({weather}) => {
                         {weatherImg}
                     </div>
                     <div className="main__info">
-                        <div className="main__temperature">{weather.main.temp > 0 ? `+${Math.floor(weather.main.temp)}` : Math.floor(weather.main.temp)}°C</div>
+                        <div
+                            className="main__temperature">{weather.main.temp > 0 ? `+${Math.floor(weather.main.temp)}` : Math.floor(weather.main.temp)}°C
+                        </div>
                         <div className="main__desc">
                             {weather.weather[0].main}
                         </div>
@@ -109,3 +111,7 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(Main)
+
+//        "start": "node scripts/start.js",
+//         "build": "node scripts/build.js",
+//         "test": "node scripts/test.js"
