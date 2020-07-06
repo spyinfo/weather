@@ -29,11 +29,17 @@ export const fetchWeather = (city) => {
             .then(({data}) => {
                 setTimeout(() => {
                     dispatch(weatherSuccess(data))
-                }, 500)
+                }, 300)
             })
             .catch((error) => {
                 console.error(error)
-                dispatch(weatherFailure(error))
+                if (error.response) {
+                    if (error.response.status === 404) {
+                        dispatch(weatherFailure(404))
+                    } else dispatch(weatherFailure(error))
+                } else {
+                    dispatch(weatherFailure(error))
+                }
             })
     }
 }

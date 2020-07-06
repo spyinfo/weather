@@ -17,7 +17,9 @@ class Search extends Component {
     onSubmit = (e) => {
         e.preventDefault()
 
-        this.props.fetchWeather(this.state.value)
+        if (this.state.value) {
+            this.props.fetchWeather(this.state.value)
+        }
     }
 
     render() {

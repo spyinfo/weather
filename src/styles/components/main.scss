@@ -1,9 +1,9 @@
 .main {
     background: rgba(243, 243, 243, 0.7);
     border-radius: 23px;
-    width: 915px;
+    max-width: 915px;
     margin: 45px auto 0 auto;
-    padding: 29px;
+    padding: 29px 29px 45px 29px;
     color: #8D8D8D;
 
     &__header {
@@ -13,6 +13,7 @@
     &__city {
         font-size: 70px;
         margin-bottom: 15px;
+        font-weight: bold;
     }
 
     &__base {
@@ -26,6 +27,7 @@
 
     &__info {
         text-align: center;
+        font-weight: bold;
     }
 
     &__img {
@@ -42,6 +44,41 @@
 
 
     &__center {
+        display: flex;
+        font-size: 27px;
+        justify-content: space-between;
+        margin-top: 33px;
+    }
 
+    &__item {
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-left: 15px;
+        }
+    }
+
+    &__item-info {
+        position: relative;
+    }
+
+    &__item-img {
+        width: 39px;
+        height: 39px;
+    }
+
+    &__item-temperature {
+        width: 47px;
+        height: 47px;
+    }
+
+    &__small {
+        margin-left: -6px;
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 30px;
     }
 }

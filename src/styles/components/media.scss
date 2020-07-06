@@ -1,0 +1,43 @@
+@media (max-width: 768px) {
+    .main {
+
+        &__item {
+            margin-top: 15px;
+        }
+
+        &__center {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+
+    .search {
+        margin: 14% auto 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .main {
+        &__city, &__temperature {
+            font-size: 60px;
+        }
+
+        &__desc {
+            font-size: 30px;
+        }
+
+        &__center {
+            font-size: 23px;
+        }
+
+        &__item-img {
+            width: 33px;
+            height: 33px;
+        }
+
+        &__item-temperature {
+            width: 41px;
+            height: 41px;
+        }
+    }
+}
